@@ -3319,46 +3319,76 @@ blockquote footer cite:before {
   font-size: 1.43em;
   cursor: pointer;
 }
-#page-header #scroll-down {
+.social-icon img {
+  visibility: hidden;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(0, 10px);
+  -moz-transform: translate(0, 10px);
+  -o-transform: translate(0, 10px);
+  -ms-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  right: 0px;
+  bottom: 100px;
+}
+.social-icon:hover img {
+  visibility: visible;
+  -webkit-transform: translate(0, 0px);
+  -moz-transform: translate(0, 0px);
+  -o-transform: translate(0, 0px);
+  -ms-transform: translate(0, 0px);
+  transform: translate(0, 0px);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+#scroll-down {
   position: absolute;
   bottom: 0;
   width: 100%;
   cursor: pointer;
 }
-#page-header #scroll-down .scroll-down-effects {
+#scroll-down .scroll-down-effects {
   position: relative;
   width: 100%;
   color: var(--light-grey);
   font-size: 30px;
 }
-#page-header.not-home-page {
+.not-home-page {
   height: 20rem;
 }
 @media screen and (max-width: 768px) {
-  #page-header.not-home-page {
+  .not-home-page {
     height: 14rem;
   }
 }
-#page-header #page-site-info {
+#page-site-info {
   position: absolute;
   top: 10rem;
   padding: 0 0.5rem;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  #page-header #page-site-info {
+  #page-site-info {
     top: 7rem;
   }
 }
-#page-header.post-bg {
+.post-bg {
   height: 20rem;
 }
 @media screen and (max-width: 768px) {
-  #page-header.post-bg {
+  .post-bg {
     height: 18rem;
   }
 }
-#page-header.post-bg:before {
+.post-bg:before {
   position: absolute;
   top: 0;
   left: 0;
@@ -3368,7 +3398,7 @@ blockquote footer cite:before {
   background-color: rgba(0,0,0,0.5);
   content: '';
 }
-#page-header #post-info {
+#post-info {
   position: absolute;
   bottom: 5rem;
   padding: 0 8%;
@@ -3376,32 +3406,32 @@ blockquote footer cite:before {
   text-align: center;
 }
 @media screen and (max-width: 900px) {
-  #page-header #post-info {
+  #post-info {
     bottom: 1.5rem;
     text-align: left;
   }
 }
 @media screen and (max-width: 768px) {
-  #page-header #post-info {
+  #post-info {
     bottom: 1.1rem;
     padding: 0 1.1rem;
   }
 }
-#page-header.not-top-img {
+.not-top-img {
   margin-bottom: 0.5rem;
   height: 60px;
   background: 0;
 }
-#page-header.not-top-img #nav {
+.not-top-img #nav {
   background: rgba(255,255,255,0.8);
   -webkit-box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
   box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
 }
-#page-header.not-top-img #nav a {
+.not-top-img #nav a {
   color: var(--font-color);
   text-shadow: none;
 }
-#page-header.nav-fixed #nav {
+.nav-fixed #nav {
   position: fixed;
   top: -60px;
   z-index: 91;
@@ -3414,18 +3444,18 @@ blockquote footer cite:before {
   -ms-transition: -ms-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
-#page-header.nav-fixed #nav a,
-#page-header.nav-fixed #nav #site-name,
-#page-header.nav-fixed #nav #toggle-menu {
+.nav-fixed #nav a,
+.nav-fixed #nav #site-name,
+.nav-fixed #nav #toggle-menu {
   color: var(--font-color);
   text-shadow: none;
 }
-#page-header.nav-fixed #nav a:hover,
-#page-header.nav-fixed #nav #site-name:hover,
-#page-header.nav-fixed #nav #toggle-menu:hover {
+.nav-fixed #nav a:hover,
+.nav-fixed #nav #site-name:hover,
+.nav-fixed #nav #toggle-menu:hover {
   color: #49b1f5;
 }
-#page-header.nav-visible #nav {
+.nav-visible #nav {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -3437,7 +3467,7 @@ blockquote footer cite:before {
   -ms-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
 }
-#page-header.nav-visible + .layout > .aside-content > .sticky_layout {
+.nav-visible + .layout > .aside-content > .sticky_layout {
   top: 70px;
   -webkit-transition: top 0.5s;
   -moz-transition: top 0.5s;
