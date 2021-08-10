@@ -11,6 +11,7 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display:inline-block;
 }
 .icon-wangyiyunyinle:before {
   content: "\e611";
@@ -18,6 +19,3 @@
 .icon-musiccloud:before {
   content: "\e600";
 }
-.icon-musiccloud:hover {
-}
-
